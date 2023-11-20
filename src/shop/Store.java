@@ -17,8 +17,6 @@ public class Store implements Printable {
 
     public void fillingTheStoreWithGoods() {
 
-        StoragePlace place;
-
         for (int i = 0; i < products.length; i++) {
             int numberOfDaysToSubtract = random.nextInt(200) + 1;
             LocalDate productionDate = LocalDate.now().minusDays(numberOfDaysToSubtract);
